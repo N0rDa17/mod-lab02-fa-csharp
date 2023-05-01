@@ -15,8 +15,8 @@ namespace fans
 
 
   public class FA1
-  {
-    public FA1()
+    {
+        public FA1()
         {
             a.Transitions['0'] = b;
             a.Transitions['1'] = e;
@@ -29,10 +29,10 @@ namespace fans
             e.Transitions['0'] = c;
             e.Transitions['1'] = e;
         }
-    public bool? Run(IEnumerable<char> s)
-    {
-      return false;
-      State current = InitialState;
+        public bool? Run(IEnumerable<char> s)
+        {
+          //  return false;
+            State current = InitialState;
             foreach (var c in s)
             {
                 current = current.Transitions[c];
@@ -73,11 +73,11 @@ namespace fans
             IsAcceptState = false,
             Transitions = new Dictionary<char, State>()
         };
-  }
+    }
 
-  public class FA2
-  {
-    public FA2()
+    public class FA2
+    {
+        public FA2()
         {
             a.Transitions['0'] = c;
             a.Transitions['1'] = b;
@@ -88,10 +88,10 @@ namespace fans
             d.Transitions['0'] = b;
             d.Transitions['1'] = c;
         }
-    public bool? Run(IEnumerable<char> s)
-    {
-      return false;
-      State current = InitialState;
+        public bool? Run(IEnumerable<char> s)
+        {
+         //   return false;
+            State current = InitialState;
             foreach (var c in s)
             {
                 current = current.Transitions[c];
@@ -126,11 +126,11 @@ namespace fans
             IsAcceptState = true,
             Transitions = new Dictionary<char, State>()
         };
-  }
-  
-  public class FA3
-  {
-    public FA3()
+    }
+
+    public class FA3
+    {
+        public FA3()
         {
             a.Transitions['0'] = a;
             a.Transitions['1'] = b;
@@ -139,10 +139,10 @@ namespace fans
             c.Transitions['0'] = c;
             c.Transitions['1'] = c;
         }
-    public bool? Run(IEnumerable<char> s)
-    {
-      return false;
-      State current = InitialState;
+        public bool? Run(IEnumerable<char> s)
+        {
+         //   return false;
+            State current = InitialState;
             foreach (var c in s)
             {
                 current = current.Transitions[c];
@@ -171,8 +171,9 @@ namespace fans
             IsAcceptState = true,
             Transitions = new Dictionary<char, State>()
         };
-  }
-
+    }
+    
+    
   class Program
   {
     static void Main(string[] args)
