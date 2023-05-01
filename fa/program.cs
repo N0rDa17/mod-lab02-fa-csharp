@@ -72,7 +72,6 @@ namespace fans
             Name = "e",
             IsAcceptState = false,
             Transitions = new Dictionary<char, State>()
-      
     }
   }
 
