@@ -72,7 +72,7 @@ namespace fans
             Name = "e",
             IsAcceptState = false,
             Transitions = new Dictionary<char, State>()
-    }
+        };
   }
 
   public class FA2
@@ -125,7 +125,7 @@ namespace fans
             Name = "d",
             IsAcceptState = true,
             Transitions = new Dictionary<char, State>()
-    }
+        };
   }
   
   public class FA3
@@ -170,7 +170,7 @@ namespace fans
             Name = "c",
             IsAcceptState = true,
             Transitions = new Dictionary<char, State>()
-    }
+        };
   }
 
   class Program
